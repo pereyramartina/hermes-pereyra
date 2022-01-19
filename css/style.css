@@ -24,8 +24,6 @@ ul, li, a {
     grid-row-gap: 0px;
 }
 
-
-
 .views-body {
     background-image: url("../src/assets/img/views-bg.png");
     width: 100%;
@@ -35,11 +33,11 @@ ul, li, a {
     overflow-x: hidden;
 }
 
-.orange-text, .menu-nav-item:hover {
+.orange-text, .menu-item:hover {
     color: #E75820;
 }
 
-.fab-whatsapp {
+.fab {
     position: fixed;
     width: 96px;
     height: 96px;
@@ -106,22 +104,22 @@ ul, li, a {
 }
 
 
-/* COMIENZA HEADER */
+/* HEADER START*/
 
-.header, .header-conocenos {
+.header {
     width: 100%;
     padding: 20px 80px;
 }
 
-.header-nav, .header-nav-conocenos {
+.header-nav {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 
-.header-menu-div, .header-div-conocenos  {
+.header-menu-container  {
     width: 100%;
     height: auto;
     display: flex;
@@ -131,13 +129,12 @@ ul, li, a {
 
 }
 
-.header-menu-item, .item-conocenos {
-    justify-content: right;
+.menu-item {
     display: inline-flex;
-
     flex-wrap: wrap;
-
+    justify-content: right;
     padding: 0px 24px;
+
     text-transform: uppercase;
     font-family: montserrat;
     font-style: normal;
@@ -145,9 +142,9 @@ ul, li, a {
     font-size: 14px;
     line-height: 17px; 
 }
-/* FIN HEADER */ 
+/* HEADER ENDS/ 
 
-/* COMIENZA FOOTER */ 
+/* FOOTER START */ 
 
 footer {
     width: 100%;
@@ -240,22 +237,18 @@ footer {
     padding: 20px 0px;
 
 }
+/* FOOTER ENDS */ 
 
 
-/* FIN FOOTER */ 
+/* HOME STARTS*/ 
 
-
-/* Comienza HOME */ 
-
-/* COMIENZA MAIN SECTION */ 
-
-
-.header {
-grid-row-start: 1;
-grid-row-end: 2;
-display: flex;
-}
-
+.header-home {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    }
+    
+/* MAIN SECTION STARTS*/ 
 
 .main-section {
     width: 100%;
@@ -286,15 +279,7 @@ display: flex;
     align-content: center;
 }
 
-.footer {
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin: 0px 0px;
-    flex-direction: column;
-}
+
 
 .main-section-title {
     font-family: montserrat;
@@ -413,7 +398,24 @@ display: flex;
 /* FIN SECCION BENEFITS */ 
 
 
-/* Comienza views CONOCENOS */
+/* FOOTER START */
+
+.footer {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px;
+    flex-direction: column;
+}
+
+/* FOOTER END */
+
+/********** VIEWS START *********/
+
+
+/* CONOCENOS STAR */
 
 .body-container-conocenos {
     background-image: url("../src/assets/img/views-bg.png");
@@ -433,8 +435,7 @@ display: flex;
     display: flex;
 }
 
-
-.nuestro-equipo-section {
+.conocenos-section {
    grid-row-start: 2;
    grid-row-end: 3;
 }
@@ -444,7 +445,7 @@ display: flex;
     grid-row-end: 4;
 }
 
-.conocenos-title {
+.conocenos-container-title {
     margin: 60px 0px;
 }
 
@@ -473,6 +474,13 @@ display: flex;
 
 .profe-picture{
     border-radius: 16px;
+    width: 300px;
+    height: 300px;
+    filter:grayscale(100%)
+}
+
+.profe-picture:hover {
+    filter: none;
 }
 
 .profes-first-row, .profes-second-row {
@@ -514,9 +522,10 @@ display: flex;
     line-height: 18px;
     color: #BDBDBD;
 }
+/* Fin CONOCENOS */
 
 
-/* Fin CONOCENOS */ 
+
 
 /* Comienza ACTIVIDADES */ 
 
@@ -525,14 +534,12 @@ display: flex;
     width: 100%;
     background-repeat: no-repeat repeat;
    
-    
     margin: 40px 0px 0px 0px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-        
 }
 
 .header-nav-actividades {
@@ -549,6 +556,7 @@ display: flex;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .footer-actividades {
@@ -559,17 +567,19 @@ display: flex;
     flex-wrap: wrap;
 }
 
-.actividades-title {
+.actividades-container {
+    margin: 60px 0px 80px 0px;
+}
+
+.actividades-heading-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin: 40px;
-
+    margin: 0px, 40px;
 }
 
-.nuestras-actividades-title {
-
+.actividades-title {
     display: flex;
     flex-wrap: wrap;
 
@@ -583,7 +593,7 @@ display: flex;
     text-align: center;
 }
 
-.nuestras-actividades-subtitle {
+.actividades-subtitle {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -604,10 +614,15 @@ display: flex;
     justify-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 60px 0px;
+}
+
+.actividades-second-row {
+    padding-top: 40px;
 }
 
 .actividad-name {
+    padding: 10px 0px 10px 40px; 
+
     font-family: montserrat;
     font-style: normal;
     font-weight: bold;
@@ -625,11 +640,11 @@ display: flex;
     font-size: 12px;
     line-height: 15px;
     color: #F2F2F2;
-    width: 230px;
 }
 
-.musculacion, .funcional, .spinning, .running, .personalizado, .yoga {
-    background-image: url(../src/assets/img/actividades-bg.png);
+.actividad {
+    /*background-image: url(../src/assets/img/actividades-bg.png);*/
+    background-color: rgba(51, 51, 51, 0.25);
     background-repeat: no-repeat;
     border-radius: 22.3294px;
     width: 287.6px;
@@ -648,23 +663,24 @@ display: flex;
     margin: 20px 40px;
 }
 
-.actividad-name {
-    margin: 20px 0px 0px 40px;    
-}
-
- .actividad-text {
-    margin: 10px 40px; 
+.actividad-text {
+    width: auto;
+    height: auto; 
+    padding: 0px 25px 0px 40px;
     text-align: left;   
 }
 
 .mas-info-link {
     text-align: end;
-    /*margin: 10px 0px 0px 20px;*/
+    width:fit-content;
+    height: fit-content;
+    padding: 40px 0px 10px 220px;
+    
 }
 
-
-.mas-info-link:hover {
-    color: #E75820;
+.actividad:hover  {
+    background-color: rgba(231, 88, 51, 0.55);
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -696,7 +712,6 @@ display: flex;
     align-items: center;
     justify-content: center;
     margin: 30px;
-
 }
 
 .membresias-section {
@@ -855,11 +870,8 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 130px;
-    
+    width: 130px; 
 }
-
-
 
 .boton-unirme:hover {
     background: #E75820;
@@ -948,7 +960,18 @@ display: flex;
 
 .motivos-div {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
 }
+
+.motivos-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px;
+}
+
 
 .motivos {
     font-family: Montserrat;
@@ -957,7 +980,7 @@ display: flex;
     font-size: 13px;
     line-height: 16px;
     color: #E0E0E0;
-    padding:10px 0px
+    padding:10px 0px 10px 10px;
 }
 
 .form-title {
@@ -972,23 +995,23 @@ display: flex;
 
 
 
-/* MEDIA QUERRIES */ 
+/* MEDIA QUERIES */ 
 
 @media all and (max-width: 600px) {
     .body-container-conocenos   
 
-    .header, .header-nav, .header-nav-conocenos, .header-menu, .header-menu-div {
+    .header, .header-nav, .header-nav-conocenos, .header-menu, .header-menu-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .header-menu-div {
+    .header-menu-container {
         margin: 20px 0px
     }  
 
     /* SECCION CONOCENOS*/ 
-    .nuestro-equipo-title, .contactanos-title, .membresias-title, .nuestras-actividades-title {
+    .nuestro-equipo-title, .contactanos-title, .membresias-title, .actividades-title {
         font-family: montserrat;
         font-style: normal;
         font-weight: bold;

@@ -46,7 +46,6 @@ ul, li, a {
     z-index: 99;
 }
 
-
 /* FONTS */ 
 
 /* Montserrat Bold: for H1 and titles */
@@ -104,7 +103,7 @@ ul, li, a {
 }
 
 
-/* HEADER START*/
+/* HEADER START
 
 .header {
     width: 100%;
@@ -142,11 +141,29 @@ ul, li, a {
     font-size: 14px;
     line-height: 17px; 
 }
-/* HEADER ENDS/ 
+HEADER ENDS/* 
+
+/* NAVBAR SECTION WITH BOOTSTRAP */
+.nav-link {
+    font-family: Montserrat;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+#link-one, #link-two, #link-three, #link-four {
+    color: #F2F2F2;
+}
+
+#link-one:hover, #link-two:hover, #link-three:hover, #link-four:hover {
+    color: #E75820;    
+}
 
 /* FOOTER START */ 
 
-footer {
+footer, .section-footer {
     width: 100%;
     background-color: black;
 }
@@ -160,13 +177,131 @@ footer {
     justify-content: space-evenly;
 }
 
-.footer-menu-list-item, .footer-time-text, .footer-location-text, .footer-email-text, .footer-social-media {
+.item-nav, .footer-time-text, .footer-location-text, .footer-email-text, .footer-social-media, .footer-text {
     font-family: poppins;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
     color: #F2F2F2;
+}
+
+#link-footer-one {
+    padding: 4px 0px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+#link-footer-one:hover {
+    color: #E75820;
+}
+
+#link-footer-two {
+    padding: 4px 0px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+#link-footer-two:hover {
+    color: #E75820;
+}
+
+#link-footer-three {
+    padding: 4px 0px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+#link-footer-three:hover {
+    color: #E75820;
+}
+
+#link-footer-four {
+    padding: 4px 0px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+#link-footer-four:hover {
+    color: #E75820;
+}
+
+#link-footer-five {
+    padding: 4px 0px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+#link-footer-five:hover {
+    color: #E75820;
+}
+
+#location-link:hover {
+    color: #E75820;
+}
+
+#mail-link:hover {
+    color: #E75820;
+}
+
+.rrss-icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+}
+
+.footer-instagram-icon, .footer-facebook-icon {
+    padding: 10px;
+}
+
+.copyright-text {
+    font-family: poppins;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 8px;
+    color: #F2F2F2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.footer-info-time, .footer-info-location, .footer-info-email {
+    padding: 4px 0px;
+}
+
+.footer-text {
+    margin: 10px 0px 0px 40px;
+}
+
+#ul-footer {
+    margin: 10px 0px 0px 40px;
 }
 
 .footer-location-text {
@@ -180,8 +315,9 @@ footer {
     justify-content: flex-start;
 }
 
-.footer-menu-nav {
+.footer-menu-list {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -246,7 +382,7 @@ footer {
     grid-row-start: 1;
     grid-row-end: 2;
     display: flex;
-    }
+}
     
 /* MAIN SECTION STARTS*/ 
 
@@ -263,23 +399,31 @@ footer {
     justify-content: flex-start;
 }
 
-.cards-benefit {
-    width: 100%;
-    height: auto;
-    margin: 60px 0px;
-
+.cards.benefits {
     grid-row-start: 3;
     grid-row-end: 4;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    align-content: center;
 }
 
+/* STYLES FOR BENEFITS SECTION WITH BOOTSTRAP */
 
+.features-text {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #333333;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.ft-text {
+    padding-top: 40px;
+}
+/* END OF BENEFIT SECTION WITH BOOTSTRAP */
 
 .main-section-title {
     font-family: montserrat;
@@ -296,7 +440,6 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .main-section-subtitle {
@@ -312,7 +455,6 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 10px 0px;
-    
 }
 
 .main-section-button { 
@@ -327,7 +469,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 20px 0px;
 
     background-color: #E75820; 
     border-radius: 8px;
@@ -339,10 +481,12 @@ footer {
 }
 
 .main-section-button:hover {
-    border: 2px solid #E75820;
+    box-shadow: 0 0 45px #E75820;
+    
+    border: 2px solid #F2F2F2;/*
     background: none;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 4px;*/
     color: #F2F2F2;
 }
 
@@ -359,44 +503,6 @@ footer {
 
 /* FIN MAIN SECTION */ 
 
-/* COMIENZA BENEFITS SECTION */ 
-
-.container-benefit {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 238px;
-    height: 238px;
-    margin: 2px 20px
-
-}
-
-
-
-.benefit-text { 
-    padding-top: 10px;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.02em;
-    color: #333333;
-}
-
-.benefit-one-icon {
-    padding-top: 40px;
-}
-
-
-
-.benefit-text-three {
-    padding-top: 16px;
-}
-/* FIN SECCION BENEFITS */ 
-
 
 /* FOOTER START */
 
@@ -411,6 +517,7 @@ footer {
 }
 
 /* FOOTER END */
+
 
 /********** VIEWS START *********/
 
@@ -432,7 +539,7 @@ footer {
 .header-conocenos {
     grid-row-start: 1;
     grid-row-end: 2;
-    display: flex;
+    
 }
 
 .conocenos-section {
@@ -446,7 +553,7 @@ footer {
 }
 
 .conocenos-container-title {
-    margin: 60px 0px;
+    margin-top: 60px;
 }
 
 .nuestro-equipo-title {
@@ -472,7 +579,50 @@ footer {
     color: #F2F2F2;
 }
 
-.profe-picture{
+/* CONOCENOS SECTION CARDS */ 
+
+.card-img {
+    filter: grayscale(100%);
+    width: 33,33%;
+    height: 33,33%;
+}
+
+.card-img:hover {
+    filter: none;
+    border: #E75820 solid 4px;
+    border-radius: 24px;
+    transition: all 0.5s ease-in-out;
+}
+
+.profe-name {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase; 
+    color: #F2F2F2; 
+}
+
+.profe-class {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.card-group-container {
+    margin: 5% 10%;
+}
+
+.card-profe {
+    border: none;
+    background: none;
+}
+
+
+/*.profe-picture{
     border-radius: 16px;
     width: 300px;
     height: 300px;
@@ -521,7 +671,8 @@ footer {
     font-size: 12.18px;
     line-height: 18px;
     color: #BDBDBD;
-}
+}*/
+
 /* Fin CONOCENOS */
 
 
@@ -674,8 +825,7 @@ footer {
     text-align: end;
     width:fit-content;
     height: fit-content;
-    padding: 40px 0px 10px 220px;
-    
+    padding: 40px 0px 10px 220px;   
 }
 
 .actividad:hover  {
@@ -683,13 +833,11 @@ footer {
     transition: all 0.5s ease-in-out;
 }
 
-
 /* Finaliza Sección ACTIVIDADES */ 
 
 
 
 /* Comienza Sección MEMBRESIAS */
-
 .body-membresias {
     margin: 40px 0px 0px 0px;
     display: grid;
@@ -702,7 +850,6 @@ footer {
 .header-membresias {
     grid-row-start: 1;
     grid-row-end: 2;
-    display: flex;
 }
 
 .membresias-text {
@@ -772,7 +919,7 @@ footer {
     border: 1.71111px; 
     box-sizing: border-box;
     border-radius: 21.3889px;
-
+    
     width: 325.11px;
     height: 385px;
 
@@ -781,6 +928,10 @@ footer {
     flex-direction: column;
 }
 
+.membresia-card:hover {
+    border: #E75820 solid 2px;
+    transition: all 0.3s ease-in;
+}
 
 .membresia-name {
     font-family: montserrat;
@@ -790,7 +941,32 @@ footer {
     line-height: 21px;
     color: #F2F2F2;
     text-transform: uppercase;
-    padding: 40px 0px 10px 20px;
+    padding: 30px 0px 10px 30px;
+}
+
+.price-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 10px 30px;
+}
+
+.plan-feature {
+    margin-bottom: 0px !important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.9778px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    color: #F2F2F2;
+    padding-left: 10px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px 10px 30px;
 }
 
 .membresia-price {
@@ -815,9 +991,8 @@ footer {
     padding-left: 10px;
 }
 
-.membresia-caracteristica {
-    padding-bottom: 20px;
-
+.plan-feature {
+    margin-bottom: 0px !important;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -825,35 +1000,25 @@ footer {
     line-height: 15px;
     letter-spacing: 0.04em;
     color: #F2F2F2;
+    padding-left: 10px;
 }
 
-.price-detail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 0px 10px 20px;
+.boton-unirme-plata {
+    padding-top: 82px;
 }
 
-.membresia-list {
-    padding: 10px 0px 10px 20px;
+.boton-unirme-bronce {
+    padding-top: 118px;
+}
+
+.boton-unirme-oro {
+    padding-top: 10px;
 }
 
 .boton-unirme-div {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.boton-unirme-bronce {
-    padding-top: 104px;
-}
-
-.boton-unirme-plata {
-    padding-top: 70px;
-}
-
-.boton-unirme-oro {
-    padding-bottom: 0px;
 }
 
 .boton-unirme {
@@ -892,7 +1057,6 @@ footer {
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 20px;
     grid-row-gap: 0px;
-
 }
 
 .header-contactanos {
@@ -900,17 +1064,17 @@ footer {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 3;
-    display: flex;
 }
 
 .contactanos-section {
+    width: fit-content;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
     display: flex;
     flex-direction: column;
-    margin: 80px;
+    margin: 80px 20px 80px 80px;
 }
 
 .formulario-section {
@@ -919,9 +1083,44 @@ footer {
     grid-column-start: 2;
     grid-column-end: 3;
     display: flex;
-    margin: 80px;
+    flex-direction: column;
+    margin: 90px;
 }
 
+/* FORM BOOTSTRAP SECTION */
+
+#btn-contact {
+    background-color: #E75820;
+    border-bottom: none;
+    border: none;
+    /*width: 148px;
+    height: 38px;*/
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14.0214px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+#btn-contact:hover {
+    box-shadow: 0 0 20px #E75820;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.form-label {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.4635px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #6F7482;
+}
 
 .footer-conocenos {
     grid-row-start: 3;
@@ -933,11 +1132,16 @@ footer {
     flex-wrap: wrap;
 }
 
+.contactanos-div {
+    display: flex;
+    flex-direction: column;
+}
+
 .contactanos-title {
+    display: inline;
     text-align: center;
     text-transform: uppercase;
-    padding: 20px 0px;
-
+    
     font-family: montserrat;
     font-style: normal;
     font-weight: bold;
@@ -946,23 +1150,22 @@ footer {
     color: #FFFFFF;
 }
 
-.contactanos-subtitle {
-
-    padding-bottom: 40px;
-       
+.contactanos-subtitle {  
     font-family: montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #E0E0E0;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .motivos-div {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-
+    padding-left: 20px;
 }
 
 .motivos-container {
@@ -972,7 +1175,6 @@ footer {
     margin: 10px 0px;
 }
 
-
 .motivos {
     font-family: Montserrat;
     font-style: normal;
@@ -980,7 +1182,7 @@ footer {
     font-size: 13px;
     line-height: 16px;
     color: #E0E0E0;
-    padding:10px 0px 10px 10px;
+    padding: 26px 0px 10px 10px;
 }
 
 .form-title {
@@ -990,27 +1192,33 @@ footer {
     font-size: 18px;
     line-height: 22px;
     color: #F2F2F2;
+    padding-left: 10px;
+}
+
+.contact-button {
+    padding-top: 25px;
 }
 
 
 
+/* ------------------MEDIA QUERIES ------------------ */ 
 
-/* MEDIA QUERIES */ 
+/* BREAKPOINT SM SIZE */
 
-@media all and (max-width: 600px) {
-    .body-container-conocenos   
-
-    .header, .header-nav, .header-nav-conocenos, .header-menu, .header-menu-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media all and (max-width: 576px) {
+    .home-body {
+        background-image: url("../src/assets/img/home-bg-sm.png");
+        width: fit-content;
+        background-repeat: no-repeat;
+    
+        margin: 40px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
     }
 
-    .header-menu-container {
-        margin: 20px 0px
-    }  
-
-    /* SECCION CONOCENOS*/ 
     .nuestro-equipo-title, .contactanos-title, .membresias-title, .actividades-title {
         font-family: montserrat;
         font-style: normal;
@@ -1033,37 +1241,223 @@ footer {
         color: #F2F2F2;   
     }
 
-    .profes-first-row, .profes-second-row {
+    /*.profes-first-row, .profes-second-row {
         display: flex; 
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
+    }*/
 
     .main-section-title {
         font-family: montserrat;
         font-style: normal;
         font-weight: bold;
-        font-size: 48px;
-        line-height: 70px;
+        font-size: 32px;
+        line-height: 40px;
         letter-spacing: 0.02em;
         color: #F2F2F2;
         text-transform: uppercase;
-
     }
     
     .main-section-subtitle {
         font-family: montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 12px;
+        line-height: 10px;
         letter-spacing: 0.02em;
         color: #F2F2F2;
     }
+
+    .main-section-button { 
+        text-transform: uppercase;
+        font-family: montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px;
     
-    /* FOOTER */ 
+        background-color: #E75820; 
+        border-radius: 8px;
+    
+        width: 140px;
+        height: 36px;
+        left: 84px;
+        top: 509px
+    }
+
+    footer {
+        width: 100%;
+        background-color: black;
+    }
+    
+    .footer-div {
+        justify-content: space-evenly;
+        flex-direction: column; 
+    }
+    
+    .footer-info {
+        align-items: center;
+    }
+    
+    .footer-section-logo, .footer-menu-nav, .footer-info, .footer-social-media {
+        padding: 10px 0px;
+    }
+
+    .body-contactanos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;        
+    }
+     
+    .footer-conocenos {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .body-contactanos {
+        margin: 40px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 0px;
+    }
+
+    .formulario-section {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 80px 0px 80px;
+    }
+
+    .contactanos-section {
+        width: fit-content;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        margin: 80px 80px 0px 80px;
+    }
+
+    .contactanos-subtitle {  
+        font-family: montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #E0E0E0;
+        padding: 0px 20px;
+    }
+    
+    .motivos-div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    
+    .motivos-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0px;
+        height: auto;
+    }
+        
+    .motivos {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #E0E0E0;
+        padding: 26px 0px 10px 10px;
+    }  
+}
+
+/* BREAKPOINT MD SIZE */ 
+
+@media all and (max-width: 992px) {
+    .body-contactanos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .formulario-section {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 80px 80px 90px;
+    }
+
+    .contactanos-section {
+        width: fit-content;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        margin: 80px 80px 0px 80px;
+    }
+
+    .contactanos-subtitle {  
+        font-family: montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #E0E0E0;
+        padding: 0px 20px;
+    }
+    
+    .motivos-div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    
+    .motivos-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0px;
+        height: auto;
+    }
+    
+    .motivos {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #E0E0E0;
+        padding: 26px 0px 10px 10px;
+    }
+  
     footer {
         width: 100%;
         background-color: black;
@@ -1072,12 +1466,6 @@ footer {
     .footer-div {
         justify-content: space-evenly;
         flex-direction: column;
-           
-        /* display: grid;
-        grid-template-columns: 2fr repeat(3, 2fr);
-        grid-template-rows: repeat(2, auto);
-        grid-column-gap: 8px;
-        grid-row-gap: 40px; */ 
     }
     
     .footer-info {
@@ -1089,52 +1477,14 @@ footer {
     }
 
 
-    .cards-benefit {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-        align-content: center;
-    }
-
     .body-contactanos {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        
     }
-    
-    .header-contactanos {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        display: flex;
-    }
-    
-    .contactanos-section {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        display: flex;
-        flex-direction: column;
-        margin: 80px;
-    }
-    
-    .formulario-section {
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        display: flex;
-        margin: 80px;
-    }
-    
-    
+     
     .footer-conocenos {
         grid-row-start: 4;
         grid-row-end: 5;
@@ -1145,3 +1495,4 @@ footer {
         flex-wrap: wrap;
     }
 }
+

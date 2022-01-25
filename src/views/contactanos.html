@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/style.css">
     <title>HERMES gym & yoga</title>
     <link rel="shortcut icon" href="../assets/img/favicon.png">
@@ -12,9 +13,40 @@
 
 <body class="views-body body-contactanos">
 
-    <!-- COMIENZO DE HEADER -->
+
     <header class="header header-contactanos">
-        
+        <!-- NAVBAR BOOTSTRAP START-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            
+            <div class="container">
+                
+                <a class="navbar-brand" href="../../index.html"> <img class="logo" src="../assets/img/logo-and-name.png" alt="Logo de Hermes gym & yoga"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link aria-current="page" id="link-one" href="./conocenos.html">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-two" href="./actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-three" href="./membresias.html">Membresias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-four" href="./contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR BOOTSTRAP END -->
+
+
+        <!-- COMIENZO DE HEADER
         <nav class="header-nav">
 
             <div class="header-logo.container">
@@ -32,10 +64,9 @@
                 </ul>
             </div>
 
-        </nav>
+        </nav> FIN DE HEADER -->
     </header>
-    <!-- FIN DE HEADER -->
-
+  
     <div class="fab">
         <a href="https://wa.me/5492213055086?text=Hola!%20Quisiera%20más%20información%20sobre%20las%20actividades" target="_blank">
             <img src="../assets/svg/fab-whatsapp.svg" alt="Botón flotante de Whatsapp">
@@ -44,7 +75,7 @@
     
     <section class="contactanos-section">
         <div class="contactanos-div">
-            <h1 class="contactanos-title">¿Por qué <span class="orange-text" > unirte</span>?</h1>
+            <h1 class="contactanos-title">¿Por qué <span class="orange-text"> unirte</span>?</h1>
             <p class="contactanos-subtitle">La actividad física tiene importantes beneficios para la salud del corazón, el cuerpo y la mente, por eso nuestra misión es posibilitar el acceso a la actividad fìsica de calidad para ayudarte a alcanzar tus objetivos individuales en un ambiente agradable. </p>
         </div>
 
@@ -76,7 +107,39 @@
 
     <section class="formulario-section">
         <h2 class="form-title">Dejanos tu consulta</h2>
-        <form action=""></form>
+
+        <div class="container form">
+
+            <div class="mb-3">
+
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                
+                <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                
+                <div class="contact-button d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary btn-lg" id="btn-contact">ENVIAR</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        
     </section>
 
     <!-- COMIENZO DE FOOTER-->
@@ -89,13 +152,13 @@
     
             
             <nav class="footer-menu-nav"> 
-                <ul class="footer-menu-list">
-                    <li class="footer-menu-list-item"><a href="../../index.html">Home</a></li>
-                    <li class="footer-menu-list-item"><a href="conocenos.html">Conocenos</a></li>
-                    <li class="footer-menu-list-item"><a href="actividades.html">Actividades</a></li>
-                    <li class="footer-menu-list-item"><a href="membresias.html">Membresias</a></li>
-                    <li class="footer-menu-list-item"><a href="contactanos.html">Contactanos</a></li>
-                </ul>
+                <div class="footer-menu-list">
+                    <a href="../../index.html" id="link-footer-one">Home</a></li>
+                    <a href="conocenos.html" id="link-footer-two">Conocenos</a></li>
+                    <a href="actividades.html" id="link-footer-three">Actividades</a></li>
+                    <a href="membresias.html" id="link-footer-four">Membresias</a></li>
+                    <a href="contactanos.html" id="link-footer-five">Contactanos</a></li>
+                </div> 
             </nav>
 
             <div class="footer-info">
@@ -108,14 +171,14 @@
                 <div class="footer-info-location">
                     <img class="footer-icon-location" src="../assets/svg/location.svg" alt="ícono de locación"> 
                     <span class="footer-location-text"> 
-                        <a class="footer-location-text" href="https://goo.gl/maps/gBHrJ4iWajcpceae8" target="_blank"> Calle AA N° 123 - La Plata </a>
+                        <a class="footer-location-text" id="location-link" href="https://goo.gl/maps/gBHrJ4iWajcpceae8" target="_blank"> Calle AA N° 123 - La Plata </a>
                     </span>   
                 </div>
     
                 <div class="footer-info-email">
                     <img class="footer-icon-email" src="../assets/svg/email.svg" alt="ícono de correo electrónico"> 
                     <span class="footer-email-text"> 
-                        <a class="footer-email-text" href="mailto:info@hermesgym.com.ar?cc=admin@hermesgym.com.ar?subject=Información?body=Hola!%0D%0ALes%20solicito20%información%20sobre%20las%20clases%20de...">info@hermesgym.com</a> 
+                        <a class="footer-email-text" id="mail-link" href="mailto:info@hermesgym.com.ar?cc=admin@hermesgym.com.ar?subject=Información?body=Hola!%0D%0ALes%20solicito20%información%20sobre%20las%20clases%20de...">info@hermesgym.com</a> 
                     </span>
                 </div>
 
@@ -145,5 +208,7 @@
     </footer>
     <!-- FIN DE FOOTER-->
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

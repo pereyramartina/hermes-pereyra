@@ -12,19 +12,18 @@
 
 <body class="home-body">
 
-    
     <header class="header header-home">
 
-
         <!-- NAVBAR BOOTSTRAP START -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-header">
+
             <div class="container">
                 
                 <a class="navbar-brand" href="./index.html"> <img class="logo" src="./src/assets/img/logo-and-name.png" alt="Logo de Hermes gym & yoga"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -43,37 +42,16 @@
                 </div>
             </div>
         </nav>
-
-        <!-- NAVBAR BOOTSTRAP END --> 
-    
-  
-        <!-- HEADER START
-        <nav class="header-nav">
-            
-                <div class="header-logo-container">
-                    <a class="logo" href="./index.html">
-                        <img src="./src/assets/img/logo-and-name.png" alt="Logo de Hermes gym & yoga"> </a>
-                </div>
-               
-                <div class="header-menu-container">
-                    <ul class="menu-list">
-                        <li class="menu-item"> <a class="menu-item" href="./src/views/conocenos.html">Conocenos</a> </li>
-                        <li class="menu-item"> <a class="menu-item" href="./src/views/actividades.html">Actividades</a> </li>
-                        <li class="menu-item"> <a class="menu-item" href="./src/views/membresias.html">Membresias</a> </li>
-                        <li class="menu-item"> <a class="menu-item" href="./src/views/contactanos.html">Contactanos</a> </li>
-                    </ul>
-                </div>
-        </nav> HEADER END-->
-        
+        <!-- NAVBAR BOOTSTRAP END -->        
     </header>
     
     <!-- MAIN SECTION START -->
     <main class="main-section">
+
         <div class="main-section-text">
             <h1 class="main-section-title">Empezá a <br> entrenar <br> hoy</h1>
             <h2 class="main-section-subtitle"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h2>
-            <!-- Lo que sigue "Quiero ser parte" es un futuro botón-->
-            <a class="main-section-button" href="./src/views/contactanos.html">Quiero ser parte</a> 
+            <a class="main-section-button" id="home-btn" href="./src/views/contactanos.html">Quiero ser parte</a> 
         </div>
         
    
@@ -83,10 +61,11 @@
             </a>
         </div>  
     </main>
+    <!-- MAIN SECTION END -->
 
-
+    <!-- BENEFITS SECTION START-->
     <section class="cards-beneftis">
-        <!-- BENEFITS SECTION START-->
+        
         <div class="container px-4 py-5 d-flex justify-content-evenly" id="featured-3">
                 
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -141,11 +120,12 @@
 
         <div class="footer-div">
         
-            <div class="footer-section-logo">
+            <div class="footer-section-logo footer-containers">
                 <img class="footer-logo" src="./src/assets/svg/logo-footer.svg" alt="logo de Hermes gym & yoga"> 
             </div>
         
-            <nav class="footer-menu-nav">
+            <nav class="footer-menu-nav footer-containers">
+
                 <div class="footer-menu-list">
                     <a href="index.html" id="link-footer-one"> Home</a></li>
                     <a href="./src/views/conocenos.html" id="link-footer-two">Conocenos</a> </li>
@@ -153,48 +133,51 @@
                     <a href="./src/views/membresias.html" id="link-footer-four">Membresias</a></li>
                     <a href="./src/views/contactanos.html" id="link-footer-five">Contactanos</a> </li>
                 </div> 
+
             </nav>
 
-            <div class="footer-info">
-                <div class="footer-info-time">
+            <div class="footer-info-container footer-containers">
+
+                <div class="footer-info">
                     <img class="footer-icon-time" src="./src/assets/svg/time.svg" alt="ícono de reloj"> 
-                    <span class="footer-time-text"> Lun. a Vie. 7 a 22hs. y Sáb. 8 a 20hs. </span>   
+                    <span class="footer-text ms-auto"> Lun. a Vie. 7 a 22hs. y Sáb. 8 a 20hs. </span>   
                 </div>  
 
-                <div class="footer-info-location">
+                <div class="footer-info">
                     <img class="footer-icon-location" src="./src/assets/svg/location.svg" alt="ícono de locación"> 
-                    <span class="footer-location-text"> 
-                        <a class="footer-location-text" id="location-link" href="https://goo.gl/maps/gBHrJ4iWajcpceae8" target="_blank"> Calle AA N° 123 - La Plata </a>
+                    <span class="footer-text ms-auto"> 
+                        <a class="footer-text ms-auto" id="location-link" href="https://goo.gl/maps/gBHrJ4iWajcpceae8" target="_blank"> Calle AA N° 123 - La Plata </a>
                     </span>   
                 </div>
 
-                <div class="footer-info-email">
+                <div class="footer-info">
                     <img class="footer-icon-email" src="./src/assets/svg/email.svg" alt="ícono de correo electrónico"> 
-                    <span class="footer-email-text"> 
-                        <a class="footer-email-text" id="mail-link" href="mailto:info@hermesgym.com.ar?cc=admin@hermesgym.com.ar?subject=Información?body=Hola!%0D%0ALes%20solicito20%información%20sobre%20las%20clases%20de...">info@hermesgym.com</a> 
+                    <span class="footer-text footer-email-text ms-auto"> 
+                        <a class="footer-text footer-email-text ms-auto" id="mail-link" href="mailto:info@hermesgym.com.ar?cc=admin@hermesgym.com.ar?subject=Información?body=Hola!%0D%0ALes%20solicito20%información%20sobre%20las%20clases%20de...">info@hermesgym.com</a> 
                     </span>
                 </div>
             </div>
 
-            <div class="footer-social-media">
-                <p class="footer-follow-us"> Seguinos en </p>
+            <div class="footer-social-media footer-containers">
+
+                <p class="footer-text footer-follow-us" id="follow-us"> Seguinos en </p>
 
                 <div class="rrss-icons">
                     <a class="footer-instagram-link" href="https://www.instagram.com/" target="_blank">
-                        <img class="footer-instagram-icon" src="./src/assets/svg/instagram.svg" alt="ícono de Instagram"> 
+                        <img class="footer-icon" src="./src/assets/svg/instagram.svg" alt="ícono de Instagram"> 
                     </a> 
     
                     <a class="footer-facebook-link" href="https://www.facebook.com/" target="_blank">
-                        <img class="footer-facebook-icon" src="./src/assets/svg/facebook.svg" alt="ícono de Facebook">    
+                        <img class="footer-icon" src="./src/assets/svg/facebook.svg" alt="ícono de Facebook">    
                     </a>
                 </div>
             </div>
-
-
         </div>
-        <div class="copyright">
+
+        <div class="copyright footer-containers">
             <p class="copyright-text"> Coypright - Martina Pereyra Web Design & Development</p>
         </div>
+
     </footer>
     <!-- FIN DE FOOTER-->
 

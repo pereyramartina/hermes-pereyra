@@ -33,10 +33,13 @@ ul, li, a {
     overflow-x: hidden;
 }
 
+/* HOVER STYLE */
+
 .orange-text, .menu-item:hover {
     color: #E75820;
 }
 
+/* FAB BUTTON */
 .fab {
     position: fixed;
     width: 96px;
@@ -46,10 +49,11 @@ ul, li, a {
     z-index: 99;
 }
 
-/* FONTS */ 
+/* ------ FONTS ------ */ 
 
 /* Montserrat Bold: for H1 and titles */
 @font-face {
+
     font-family: "montserrat";
     font-weight: 700;
     font-style: normal;
@@ -102,47 +106,6 @@ ul, li, a {
          url("./src/assets/fonts/poppins-lightitalic.woff") format("woff");
 }
 
-
-/* HEADER START
-
-.header {
-    width: 100%;
-    padding: 20px 80px;
-}
-
-.header-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-.header-menu-container  {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right;
-
-}
-
-.menu-item {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    padding: 0px 24px;
-
-    text-transform: uppercase;
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px; 
-}
-HEADER ENDS/* 
-
 /* NAVBAR SECTION WITH BOOTSTRAP */
 .nav-link {
     font-family: Montserrat;
@@ -161,11 +124,25 @@ HEADER ENDS/*
     color: #E75820;    
 }
 
-/* FOOTER START */ 
-
-footer, .section-footer {
+/* FOOTER SECTION WITH BOOTSTRAP START */ 
+footer {
     width: 100%;
     background-color: black;
+}
+
+.footer-text {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #F2F2F2;
+
+    margin: 10px 0px 0px 40px;
+}
+
+#location-footer-link {
+    margin-left: 0px;
 }
 
 .footer-div {
@@ -175,137 +152,6 @@ footer, .section-footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.item-nav, .footer-time-text, .footer-location-text, .footer-email-text, .footer-social-media, .footer-text {
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #F2F2F2;
-}
-
-#link-footer-one {
-    padding: 4px 0px;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #F2F2F2;
-    text-transform: capitalize;
-}
-
-#link-footer-one:hover {
-    color: #E75820;
-}
-
-#link-footer-two {
-    padding: 4px 0px;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #F2F2F2;
-    text-transform: capitalize;
-}
-
-#link-footer-two:hover {
-    color: #E75820;
-}
-
-#link-footer-three {
-    padding: 4px 0px;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #F2F2F2;
-    text-transform: capitalize;
-}
-
-#link-footer-three:hover {
-    color: #E75820;
-}
-
-#link-footer-four {
-    padding: 4px 0px;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #F2F2F2;
-    text-transform: capitalize;
-}
-
-#link-footer-four:hover {
-    color: #E75820;
-}
-
-#link-footer-five {
-    padding: 4px 0px;
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #F2F2F2;
-    text-transform: capitalize;
-}
-
-#link-footer-five:hover {
-    color: #E75820;
-}
-
-#location-link:hover {
-    color: #E75820;
-}
-
-#mail-link:hover {
-    color: #E75820;
-}
-
-.rrss-icons {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0px;
-}
-
-.footer-instagram-icon, .footer-facebook-icon {
-    padding: 10px;
-}
-
-.copyright-text {
-    font-family: poppins;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 8px;
-    color: #F2F2F2;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 0px;
-}
-
-.footer-info-time, .footer-info-location, .footer-info-email {
-    padding: 4px 0px;
-}
-
-.footer-text {
-    margin: 10px 0px 0px 40px;
-}
-
-#ul-footer {
-    margin: 10px 0px 0px 40px;
-}
-
-.footer-location-text {
-    padding-left: 2px;
 }
 
 .footer-section-logo {
@@ -320,20 +166,32 @@ footer, .section-footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.footer-menu-list-item {
     padding: 4px 0px;
 }
 
-.footer-info {
+#link-footer-one, #link-footer-two, #link-footer-three, #link-footer-four, #link-footer-five {
+    padding: 4px 0px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+#link-footer-one:hover, #link-footer-two:hover, #link-footer-three:hover, #link-footer-four:hover, #link-footer-five:hover, #location-link:hover, #mail-link:hover {
+    color: #E75820;
+}
+
+.footer-info-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.footer-info-time, .footer-info-location, .footer-info-email {
+.footer-info {
     padding: 4px 0px;
 }
 
@@ -344,23 +202,22 @@ footer, .section-footer {
     justify-content: flex-start;
 }
 
-.footer-follow-us {
-    padding: 4px 0px;;
+#follow-us {
+    margin: 0;
+    padding-top: 8px;
 }
 
 .rrss-icons {
     display: flex;
     flex-direction: row;
+    margin-left: 0px;
 }
 
-.footer-instagram-icon, .footer-facebook-icon {
-    padding: 10px;
+.footer-icon {
+    padding: 0px 10px;
 }
 
-.copyright {
-
-    display: flex;
-    flex-wrap: wrap;
+.copyright-text {
     font-family: poppins;
     font-style: italic;
     font-weight: 300;
@@ -371,20 +228,64 @@ footer, .section-footer {
     justify-content: center;
     text-align: center;
     padding: 20px 0px;
-
 }
 /* FOOTER ENDS */ 
 
+/* TITLES & SUBTITLES STYLES  START */ 
+.titles {
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-align: center;
+}
 
-/* HOME STARTS*/ 
+.subtitles {
+    margin: 0px 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+}
 
+#contactanos-subtitle {
+    text-align: left;
+}
+
+/* TITLES & SUBTITLES STYLES END */
+
+
+/* ------ HOME STARTS ------ */ 
+
+/* GRID CONFIG */ 
 .header-home {
     grid-row-start: 1;
     grid-row-end: 2;
+}
+
+.cards.benefits {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.footer-home {
+    grid-row-start: 4;
+    grid-row-end: 5;
     display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px;
+    flex-direction: column;
 }
     
-/* MAIN SECTION STARTS*/ 
+/* MAIN SECTION START */ 
 
 .main-section {
     width: 100%;
@@ -399,31 +300,16 @@ footer, .section-footer {
     justify-content: flex-start;
 }
 
-.cards.benefits {
-    grid-row-start: 3;
-    grid-row-end: 4;
-
+.main-section-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 40px 80px;
 }
-
-/* STYLES FOR BENEFITS SECTION WITH BOOTSTRAP */
-
-.features-text {
-    font-family: poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.02em;
-    color: #333333;
-
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.ft-text {
-    padding-top: 40px;
-}
-/* END OF BENEFIT SECTION WITH BOOTSTRAP */
 
 .main-section-title {
     font-family: montserrat;
@@ -482,47 +368,36 @@ footer, .section-footer {
 
 .main-section-button:hover {
     box-shadow: 0 0 45px #E75820;
-    
-    border: 2px solid #F2F2F2;/*
-    background: none;
-    box-sizing: border-box;
-    border-radius: 4px;*/
+    border: 2px solid #F2F2F2;
     color: #F2F2F2;
 }
+/* MAIN SECTION END */ 
 
-.main-section-text{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    margin: 40px 80px;
+
+/* STYLES FOR BENEFITS SECTION WITH BOOTSTRAP */
+
+.features-text {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #333333;
+
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-/* FIN MAIN SECTION */ 
-
-
-/* FOOTER START */
-
-.footer {
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin: 0px 0px;
-    flex-direction: column;
+.ft-text {
+    padding-top: 40px;
 }
-
-/* FOOTER END */
-
-
-/********** VIEWS START *********/
+/* END OF BENEFITs SECTION WITH BOOTSTRAP */
 
 
-/* CONOCENOS STAR */
+/* ------ CONOCENOS START ------ */
+
+/* GENERAL & GRID CONFIG */ 
 
 .body-container-conocenos {
     background-image: url("../src/assets/img/views-bg.png");
@@ -539,7 +414,6 @@ footer, .section-footer {
 .header-conocenos {
     grid-row-start: 1;
     grid-row-end: 2;
-    
 }
 
 .conocenos-section {
@@ -556,30 +430,16 @@ footer, .section-footer {
     margin-top: 60px;
 }
 
-.nuestro-equipo-title {
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    color: #F2F2F2;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.nuestro-equipo-subtitle {
-    margin: 0px 40px;
-    padding-top: 10px;
-    text-align: center;
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #F2F2F2;
-}
-
 /* CONOCENOS SECTION CARDS */ 
+
+.card-group-container {
+    margin: 5% 10%;
+}
+
+.card-profe {
+    border: none;
+    background: none;
+}
 
 .card-img {
     filter: grayscale(100%);
@@ -611,74 +471,12 @@ footer, .section-footer {
     font-size: 14px;
     color: #BDBDBD;
 }
-
-.card-group-container {
-    margin: 5% 10%;
-}
-
-.card-profe {
-    border: none;
-    background: none;
-}
+/* CONOCENOS END */
 
 
-/*.profe-picture{
-    border-radius: 16px;
-    width: 300px;
-    height: 300px;
-    filter:grayscale(100%)
-}
+/* ------ ACTIVIDADES START ------ */ 
 
-.profe-picture:hover {
-    filter: none;
-}
-
-.profes-first-row, .profes-second-row {
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.profes-first-row {
-    margin-top: 60px;
-}
-
-.profes-second-row {
-    margin-bottom: 60px;
-}
-
-.profe-foto {
-    padding: 20px 40px;
-}
-
-
-.profe-name {
-    text-transform: uppercase;
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15.66px;
-    line-height: 19px;
-    color: #F2F2F2;
-}
-
-.profe-class {
-    font-family: poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12.18px;
-    line-height: 18px;
-    color: #BDBDBD;
-}*/
-
-/* Fin CONOCENOS */
-
-
-
-
-/* Comienza ACTIVIDADES */ 
+/* GENERAL & GRID CONFIG */ 
 
 .body-container-actividades  {
     background-image: url("../src/assets/img/views-bg.png");
@@ -718,10 +516,7 @@ footer, .section-footer {
     flex-wrap: wrap;
 }
 
-.actividades-container {
-    margin: 60px 0px 80px 0px;
-}
-
+/* STYLES */ 
 .actividades-heading-container {
     display: flex;
     flex-direction: column;
@@ -730,32 +525,8 @@ footer, .section-footer {
     margin: 0px, 40px;
 }
 
-.actividades-title {
-    display: flex;
-    flex-wrap: wrap;
-
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    color: #F2F2F2;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.actividades-subtitle {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 40px;
-
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #F2F2F2;
+.actividades-container {
+    margin: 60px 0px 80px 0px;
 }
 
 .actividades-first-row, .actividades-second-row {
@@ -771,30 +542,7 @@ footer, .section-footer {
     padding-top: 40px;
 }
 
-.actividad-name {
-    padding: 10px 0px 10px 40px; 
-
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16.0771px;
-    line-height: 20px;
-    letter-spacing: 0.045em;
-    color: #F2F2F2;
-    text-transform: uppercase;
-}
-
-.actividad-text, .mas-info-link {
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    color: #F2F2F2;
-}
-
 .actividad {
-    /*background-image: url(../src/assets/img/actividades-bg.png);*/
     background-color: rgba(51, 51, 51, 0.25);
     background-repeat: no-repeat;
     border-radius: 22.3294px;
@@ -808,10 +556,37 @@ footer, .section-footer {
     align-items: flex-start;
 } 
 
+.actividad:hover  {
+    background-color: rgba(231, 88, 51, 0.55);
+    transition: all 0.5s ease-in-out;
+}
+
+.actividad-name {
+    padding: 10px 0px 10px 40px; 
+
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.0771px;
+    line-height: 20px;
+    letter-spacing: 0.045em;
+    color: #F2F2F2;
+    text-transform: uppercase;
+}
+
 .actividad-icon {
     width: 60x;
     height: 60px;
     margin: 20px 40px;
+}
+
+.actividad-text, .mas-info-link {
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F2F2F2;
 }
 
 .actividad-text {
@@ -827,17 +602,12 @@ footer, .section-footer {
     height: fit-content;
     padding: 40px 0px 10px 220px;   
 }
-
-.actividad:hover  {
-    background-color: rgba(231, 88, 51, 0.55);
-    transition: all 0.5s ease-in-out;
-}
-
-/* Finaliza Sección ACTIVIDADES */ 
+/* ACTIVIDADES END */ 
 
 
+/* ------ MEMBRESIAS START ------- */
 
-/* Comienza Sección MEMBRESIAS */
+/* GENERAL & GRID CONFIG */
 .body-membresias {
     margin: 40px 0px 0px 0px;
     display: grid;
@@ -850,15 +620,6 @@ footer, .section-footer {
 .header-membresias {
     grid-row-start: 1;
     grid-row-end: 2;
-}
-
-.membresias-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
 }
 
 .membresias-section {
@@ -883,27 +644,15 @@ footer, .section-footer {
     flex-wrap: wrap;
 }
 
-.membresias-title {
-    text-align: center;
-    text-transform: uppercase;
+/* STYLES */ 
 
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    color: #F2F2F2;
-}
-
-.membresias-subtitle {
-    text-align: center;
-
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #F2F2F2; 
+.membresias-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
 }
 
 .membresias-cards-container {
@@ -951,8 +700,8 @@ footer, .section-footer {
     padding: 0px 0px 10px 30px;
 }
 
-.plan-feature {
-    margin-bottom: 0px !important;
+.plan-features {
+    margin-bottom: 0px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -992,7 +741,7 @@ footer, .section-footer {
 }
 
 .plan-feature {
-    margin-bottom: 0px !important;
+    margin-bottom: 0px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -1003,23 +752,11 @@ footer, .section-footer {
     padding-left: 10px;
 }
 
-.boton-unirme-plata {
-    padding-top: 82px;
-}
-
-.boton-unirme-bronce {
-    padding-top: 118px;
-}
-
-.boton-unirme-oro {
-    padding-top: 10px;
-}
-
 .boton-unirme-div {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
 
 .boton-unirme {
     font-family: Montserrat;
@@ -1045,12 +782,23 @@ footer, .section-footer {
     border-radius: 10px;
     color: #F2F2F2;
 }
+.boton-unirme-plata {
+    padding-top: 82px;
+}
 
-/* Fin MEMBRESIAS */ 
+.boton-unirme-bronce {
+    padding-top: 118px;
+}
 
-/* Comienza CONTACTANOS */ 
+.boton-unirme-oro {
+    padding-top: 10px;
+}
+/* MEMBRESIAS END*/ 
+
+/* ------ CONTACTANOS START ------ */ 
+
+/*GENERAL & GRID CONFIG */ 
 .body-contactanos {
-   
     margin: 40px 0px 0px 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1087,41 +835,6 @@ footer, .section-footer {
     margin: 90px;
 }
 
-/* FORM BOOTSTRAP SECTION */
-
-#btn-contact {
-    background-color: #E75820;
-    border-bottom: none;
-    border: none;
-    /*width: 148px;
-    height: 38px;*/
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14.0214px;
-    line-height: 17px;
-    letter-spacing: 0.02em;
-    color: #F2F2F2;
-    text-transform: capitalize;
-}
-
-#btn-contact:hover {
-    box-shadow: 0 0 20px #E75820;
-    transition: all 0.5s ease-in-out;
-}
-
-
-.form-label {
-    font-family: poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12.4635px;
-    line-height: 150%;
-    letter-spacing: 0.01em;
-    color: #6F7482;
-}
-
 .footer-conocenos {
     grid-row-start: 3;
     grid-row-end: 4;
@@ -1132,40 +845,17 @@ footer, .section-footer {
     flex-wrap: wrap;
 }
 
+/* MOTIVOS SECTION */ 
 .contactanos-div {
     display: flex;
     flex-direction: column;
-}
-
-.contactanos-title {
-    display: inline;
-    text-align: center;
-    text-transform: uppercase;
-    
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    color: #FFFFFF;
-}
-
-.contactanos-subtitle {  
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #E0E0E0;
-    padding-top: 10px;
-    padding-left: 20px;
 }
 
 .motivos-div {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .motivos-container {
@@ -1185,6 +875,7 @@ footer, .section-footer {
     padding: 26px 0px 10px 10px;
 }
 
+/* FORM BOOTSTRAP SECTION START */
 .form-title {
     font-family: Montserrat;
     font-style: normal;
@@ -1195,10 +886,39 @@ footer, .section-footer {
     padding-left: 10px;
 }
 
+.form-label {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.4635px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #6F7482;
+}
+
 .contact-button {
     padding-top: 25px;
 }
 
+#btn-contact {
+    background-color: #E75820;
+    border-bottom: none;
+    border: none;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14.0214px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+#btn-contact:hover {
+    box-shadow: 0 0 20px #E75820;
+    transition: all 0.5s ease-in-out;
+}
 
 
 /* ------------------MEDIA QUERIES ------------------ */ 
@@ -1219,7 +939,7 @@ footer, .section-footer {
         grid-row-gap: 0px;
     }
 
-    .nuestro-equipo-title, .contactanos-title, .membresias-title, .actividades-title {
+   .titles {
         font-family: montserrat;
         font-style: normal;
         font-weight: bold;
@@ -1230,7 +950,7 @@ footer, .section-footer {
         text-align: center;
     }
 
-    .nuestro-equipo-subtitle, .contactanos-subtitle, .membresias-subtitle, .nuestras-actividades-subtitle {
+    .subtitles {
         padding-top: 10px;
         text-align: center;
         font-family: montserrat;
@@ -1240,13 +960,6 @@ footer, .section-footer {
         line-height: 17px;
         color: #F2F2F2;   
     }
-
-    /*.profes-first-row, .profes-second-row {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }*/
 
     .main-section-title {
         font-family: montserrat;
@@ -1302,11 +1015,11 @@ footer, .section-footer {
         flex-direction: column; 
     }
     
-    .footer-info {
+    .footer-info-container {
         align-items: center;
     }
     
-    .footer-section-logo, .footer-menu-nav, .footer-info, .footer-social-media {
+    .footer-containers {
         padding: 10px 0px;
     }
 
@@ -1357,16 +1070,7 @@ footer, .section-footer {
         margin: 80px 80px 0px 80px;
     }
 
-    .contactanos-subtitle {  
-        font-family: montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 17px;
-        color: #E0E0E0;
-        padding: 0px 20px;
-    }
-    
+   
     .motivos-div {
         display: flex;
         flex-direction: column;
@@ -1423,17 +1127,7 @@ footer, .section-footer {
         flex-direction: column;
         margin: 80px 80px 0px 80px;
     }
-
-    .contactanos-subtitle {  
-        font-family: montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 17px;
-        color: #E0E0E0;
-        padding: 0px 20px;
-    }
-    
+   
     .motivos-div {
         display: flex;
         flex-direction: column;
@@ -1475,7 +1169,6 @@ footer, .section-footer {
     .footer-section-logo, .footer-menu-nav, .footer-info, .footer-social-media {
         padding: 10px 0px;
     }
-
 
     .body-contactanos {
         display: grid;

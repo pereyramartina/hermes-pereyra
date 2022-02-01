@@ -1,0 +1,128 @@
+/* GENERAL & GRID CONFIG */ 
+
+.body-container-actividades  {
+    margin: 40px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.header-nav-actividades {
+    grid-row-start:1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.actividades-section {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.footer-actividades {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* STYLES */ 
+
+.actividades-section {
+
+    .actividades-heading-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0px, 40px;
+    }
+
+    .actividades-container {
+        margin: 60px 0px 80px 0px;
+
+
+        .actividades-first-row, .actividades-second-row {
+            display: flex; 
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            .actividad {
+                background-color: rgba(51, 51, 51, 0.25);
+                background-repeat: no-repeat;
+                border-radius: 22.3294px;
+                width: 287.6px;
+                height: 271.53px;
+                margin-top: 20px;
+            
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+            
+                &:hover  {
+                    background-color: rgba(231, 88, 51, 0.55);
+                    transition: all 0.5s ease-in-out;
+                }
+
+                .actividad-icon {
+                    width: 60x;
+                    height: 60px;
+                    margin: 20px 40px;
+                }
+
+                .actividad-name {
+                    padding: 10px 0px 10px 40px; 
+                
+                    font-family: montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16.0771px;
+                    line-height: 20px;
+                    letter-spacing: 0.045em;
+                    color: nth($color,2);
+                    text-transform: uppercase;
+                }
+                               
+                .actividad-text, .mas-info-link {
+                    font-family: montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: nth($color,2);
+                }
+
+                .actividad-text {
+                    width: auto;
+                    height: auto; 
+                    padding: 0px 25px 0px 40px;
+                    text-align: left;   
+                }
+                
+                .mas-info-link {
+                    text-align: end;
+                    width:fit-content;
+                    height: fit-content;
+                    padding: 40px 0px 10px 220px;   
+                }
+            } 
+        }
+
+        .actividades-second-row {
+            padding-top: 40px;
+        }
+    }
+}
+/* ACTIVIDADES END */ 

@@ -1,0 +1,273 @@
+/*GENERAL & GRID CONFIG */ 
+.body-contactanos {
+    margin: 40px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+
+    @media all and (max-width: $sm) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    @media all and (max-width: 992px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
+.header-contactanos {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.contactanos-section {
+    width: fit-content;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 20px 80px 80px;
+}
+
+.formulario-section {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    margin: 90px;
+}
+
+.footer-conocenos {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media all and (max-width: $sm) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    @media all and (max-width: 992px) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+/* ----------- STYLES ---------- */ 
+
+/* MOTIVOS SECTION */ 
+
+
+.contactanos-section {
+
+    .contactanos-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .motivos-div {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+
+        .motivos-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px 0px;
+
+            .motivos {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+                color: nth($color, 2);
+                padding: 26px 0px 10px 10px;
+               
+                @media all and (max-width: $sm) {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: nth($color,2);
+                    padding: 26px 0px 10px 10px;
+                }
+
+                @media all and (max-width: 992px) {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: nth($color,2);
+                    padding: 26px 0px 10px 10px;
+                }
+            }
+
+            @media all and (max-width: $sm) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 10px 0px;
+                height: auto;
+            }
+
+            @media all and (max-width: 992px) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 10px 0px;
+                height: auto;
+            }
+        }
+
+        @media all and (max-width: $sm) {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+
+        @media all and (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+    }
+
+    @media all and (max-width: $sm) {
+        width: fit-content;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        margin: 80px 80px 0px 80px;
+    }
+
+    @media all and (max-width: 992px) {
+        width: fit-content;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        margin: 80px 80px 0px 80px;
+    }
+}
+
+.formulario-section {
+
+    .form-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #F2F2F2;
+        padding-left: 10px;
+    }
+
+    .container-form {
+        
+        .mb-3 {
+                
+            .form-label {
+                font-family: poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12.4635px;
+                line-height: 150%;
+                letter-spacing: 0.01em;
+                color: #6F7482;
+            }
+        }
+
+        
+        .contact-button {
+            padding-top: 25px;
+
+            #btn-contact {
+                background-color: nth($color,1);
+                border-bottom: none;
+                border: none;
+        
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14.0214px;
+                line-height: 17px;
+                letter-spacing: 0.02em;
+                color: nth($color,2);
+                text-transform: capitalize;
+    
+                &:hover {
+                    box-shadow: 0 0 20px nth($color,1);
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+        }
+    }
+
+    @media all and (max-width: $sm) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 80px 0px 80px;
+    }
+
+    @media all and (max-width: 992px) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 80px 80px 90px;
+    }
+}
+
+
+
+
+
+

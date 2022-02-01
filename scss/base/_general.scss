@@ -1,0 +1,55 @@
+/* IMPORT */ 
+@import 'listas';
+@import 'variables';
+
+
+
+/* GENERAL CONFIGURATIONS FOR ALL FILES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+    color: nth($color, 2);
+}
+
+.orange-text {
+    color: $orange;
+}
+
+.home-body {
+    background-image: url("../src/assets/img/home-bg.png");
+    width: 100%;
+    background-repeat: no-repeat;
+
+    margin: 40px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.body-views {
+    background-image: url("../src/assets/img/views-bg.png");
+    width: 100%;
+    background-repeat: no-repeat repeat;
+    position: absolute;
+    left: 0px;
+    overflow-x: hidden;
+}
+
+/* FAB BUTTON */
+.fab {
+    position: fixed;
+    width: 96px;
+    height: 96px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 99;
+}

@@ -1,0 +1,258 @@
+/* IMPORT */ 
+
+@import './base/general';
+@import './base/listas';
+@import './base/variables';
+@import './base/text';
+
+@import './base/header';
+@import './base/footer';
+
+
+@import './components/conocenos';
+@import './components/actividades';
+@import './components/membresias';
+@import './components/contactanos';
+
+/* ----------------------------------- */ 
+
+
+/* ------ HOME STARTS ------ */ 
+
+/* GRID CONFIG */ 
+.home-body {
+
+    .header-home {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .main-section {
+        width: 100%;
+        height: auto;
+        margin-bottom: 6%;
+    
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        .main-section-text{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            width: auto;
+            height: auto;
+            margin: 40px 80px;
+    
+            .main-section-title {
+                font-family: montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 78px;
+                letter-spacing: 0.02em;
+                color: nth($color,2);
+                text-transform: uppercase;
+            
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                @media all and (max-width: $mobile) {
+                    font-size: 24px;
+                    line-height: 30px;
+                    letter-spacing: 0.02em;
+                    margin: 0px;
+                }
+
+                @media all and (max-width: $sm) {
+                    font-family: montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 30px;
+                    letter-spacing: 0.02em;
+                    color: nth($color,2);
+                    text-transform: uppercase;
+                }
+
+            }
+    
+            .main-section-subtitle {
+                font-family: montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.02em;
+                color: nth($color,2);
+            
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0px;
+
+                @media all and (max-width: $mobile) {
+                    font-size: 11px;
+                    font-weight: 300;
+                    margin: 0px;
+                }
+
+                @media all and (max-width: $sm) {
+
+                    font-family: montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 10px;
+                    letter-spacing: 0.02em;
+                    color: nth($color,2);
+                }
+            }
+            
+            .main-section-button { 
+                text-transform: uppercase;
+                font-family: montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0px;
+            
+                background-color: nth($color,1); 
+                border-radius: 8px;
+            
+                width: 180px;
+                height: 45px;
+                left: 84px;
+                top: 509px;
+            
+                &:hover {
+                    box-shadow: 0 0 45px nth($color, 1);
+                    border: 2px solid nth($color, 2);
+                    color: nth($color,2);
+                }
+
+                @media all and (max-width: $sm) {
+
+                    text-transform: uppercase;
+                    font-family: montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 17px;
+                    text-align: center;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px 0px;
+    
+                    background-color: nth($color,1); 
+                    border-radius: 8px;
+    
+                    width: 140px;
+                    height: 36px;
+                    left: 84px;
+                    top: 509px
+                }
+            }
+
+            @media all and (max-width: $mobile) {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+                width: auto;
+                height: auto;
+                margin: 1px 20px;
+            }
+
+            @media all and (max-width: $sm) {
+
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+                width: auto;
+                height: auto;
+                margin: 10px 40px;
+            }
+        }
+    }
+
+    .cards.benefits {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .footer-home {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0px 0px;
+        flex-direction: column;
+    }
+
+    @media all and (max-width: $mobile) {
+        background-image: url("../src/assets/img/home-bg-sm.png");
+        width: fit-content;
+        background-repeat: no-repeat;
+    
+        margin: 20px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    @media all and (max-width: $sm) {
+        background-image: url("../src/assets/img/home-bg-sm.png");
+        width: fit-content;
+        background-repeat: no-repeat;
+    
+        margin: 40px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
+/* STYLES FOR BENEFITS SECTION  */
+.features-text {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #333333;
+           
+    margin-right: 10px;
+    margin-left: 10px;
+}
+            
+.ft-text {
+    padding-top: 40px;
+}
+
+

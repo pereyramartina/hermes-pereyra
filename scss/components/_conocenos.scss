@@ -1,0 +1,92 @@
+/* GENERAL & GRID CONFIG */ 
+
+.body-container-conocenos {
+    margin: 40px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (3, auto);
+    grid-row-gap: 0px; 
+    
+    @media all and (max-width: $sm) {
+        margin: 40px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 0px;
+    }
+}
+
+.header-conocenos {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.conocenos-section {
+   grid-row-start: 2;
+   grid-row-end: 3;
+}
+
+.footer-conocenos {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.conocenos-container-title {
+    margin-top: 60px;
+}
+/* --------------------------- */
+
+/* CONOCENOS SECTION CARDS */ 
+
+.conocenos-section {
+
+    .card-group-container {
+        margin: 5% 10%;
+    }
+
+    .card-container-card {
+        .card-profe {
+            border: none;
+            background: none;
+
+            .card-img {
+                filter: grayscale(100%);
+                width: 33,33%;
+                height: 33,33%;
+
+                &:hover {
+                    filter: none;
+                    border: nth($color,1) solid 4px;
+                    border-radius: 24px;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+            .card-body {
+                .profe-name {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-transform: uppercase; 
+                    color: nth($color, 2); 
+                }
+                
+                .profe-class {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: nth($color, 2);
+                }
+            }
+
+        }
+    }
+
+
+}
+/* CONOCENOS END */
+
+

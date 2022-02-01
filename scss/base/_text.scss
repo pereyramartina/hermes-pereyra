@@ -1,0 +1,110 @@
+/* ------ FONTS ------ */ 
+
+/* Montserrat Bold: for H1 and titles */
+@font-face {
+    font-family: "montserrat";
+    font-weight: 700;
+    font-style: normal;
+    src: url("./src/assets/fonts/montserrat-bold.woff2") format("woff2"),
+         url("./src/assets/fonts/montserrat-bold.woff") format("woff");
+}
+
+/* Montserrat Medium for H2, subtitles, menu items */
+@font-face {
+    font-family: "montserrat";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./src/assets/fonts/montserrat-medium.woff2") format("woff2"),
+         url("./src/assets/fonts/montserrat-medium.woff") format("woff");
+}
+
+/* Montserrat SemiBold for buttoms */
+@font-face {
+    font-family: "montserrat";
+    font-weight: 600;
+    font-style: normal;
+    src: url("./src/assets/fonts/montserrat-semibold.woff2") format("woff2"),
+         url("./src/assets/fonts/montserrat-semibold.woff2") format("woff");
+}
+
+/* Poppins Medium for Benefits text */
+@font-face {
+    font-family: "poppins";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./src/assets/fonts/poppins-medium.woff2") format("woff2"),
+         url("./src/assets/fonts/poppins-medium.woff") format("woff");
+}
+
+/* Poppins Light for Footer text */
+@font-face {
+    font-family: "poppins";
+    font-weight: 300;
+    font-style: normal;
+    src: url("./src/assets/fonts/poppins-light.woff2") format("woff2"),
+         url("./src/assets/fonts/poppins-light.woff") format("woff");
+}
+
+/* Poppins Light Italic for Copyright */
+@font-face {
+    font-family: "poppins";
+    font-weight: 300;
+    font-style: italic;
+    src: url("./src/assets/fonts/poppins-lightitalic.woff2") format("woff2"),
+         url("./src/assets/fonts/poppins-lightitalic.woff") format("woff");
+}
+
+/* ------------------------------------------------- */
+
+
+/* TITLES & SUBTITLES STYLES START */ 
+.titles {
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: nth($color,2);
+    text-transform: uppercase;
+    text-align: center;
+
+    @media all and (max-width: $sm) {
+        font-family: montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 59px;
+        color: nth($color,2);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.subtitles {
+    margin: 0px 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: nth($color,2);
+
+    @media all and (max-width: $sm) {
+        padding-top: 10px;
+        text-align: center;
+        font-family: montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        color: nth($color,2); 
+    }
+}
+
+#contactanos-subtitle {
+    text-align: left;
+}
+
+/* TITLES & SUBTITLES STYLES END */

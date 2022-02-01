@@ -1,0 +1,44 @@
+
+
+/* GENERAL */ 
+
+.header {
+    .navbar {
+        .container {
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+
+                        .nav-link {
+                            font-family: Montserrat;
+                            font-style: bold;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-transform: uppercase;
+
+                            @media all and (max-width: $mobile) {
+                                font-family: Montserrat;
+                                font-style: bold;
+                                font-weight: 500;
+                                font-size: 10px;
+                                line-height: 10px;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        #link-one, #link-two, #link-three, #link-four {
+                            color: nth($color,2);
+                    
+                            &:hover {
+                                color: nth($color,1); 
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }   
+}
+

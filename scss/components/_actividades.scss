@@ -93,6 +93,7 @@
                     letter-spacing: 0.045em;
                     color: nth($color,2);
                     text-transform: uppercase;
+                    font-display: swap;
                 }
                                
                 .actividad-text, .mas-info-link {
@@ -102,6 +103,7 @@
                     font-size: 12px;
                     line-height: 15px;
                     color: nth($color,2);
+                    font-display: swap;
                 }
 
                 .actividad-text {

@@ -1,0 +1,47 @@
+/* GENERAL --> TITLES & SUBTITLES FONT CONF */ 
+
+%titles {
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: nth($color,2);
+    text-transform: uppercase;
+    text-align: center;
+    font-display: swap;
+}
+
+%subtitles {
+    margin: 0px 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: nth($color,2);
+    font-display: swap;
+}
+
+
+
+
+/* CONTACTANOS --> FORM */ 
+
+%label-form {
+    font-family: "montserrat";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    color: nth($color,2);
+} 
+
+%imput-focus {
+    border-bottom: none;
+    border-color: nth($color,1); 
+    box-shadow: 0 0 15px nth($color, 1);
+}
+
+

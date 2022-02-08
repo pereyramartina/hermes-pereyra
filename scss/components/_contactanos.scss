@@ -40,6 +40,21 @@
     display: flex;
     flex-direction: column;
     margin: 80px 20px 80px 80px;
+
+    #contactanos-subtitle {
+
+        @media all and (max-width: $mobile) {
+            text-align: center;
+        }
+
+        @media all and (max-width: $sm) {
+            text-align: center;
+        }
+    
+        @media all and (max-width: 992px) {
+            text-align: center;
+        }
+    }
 }
 
 .formulario-section {
@@ -116,6 +131,7 @@
                 line-height: 16px;
                 color: nth($color, 2);
                 padding: 26px 0px 10px 10px;
+                font-display: swap;
                
                 @media all and (max-width: $sm) {
                     font-family: Montserrat;
@@ -125,6 +141,7 @@
                     line-height: 16px;
                     color: nth($color,2);
                     padding: 26px 0px 10px 10px;
+                    font-display: swap;
                 }
 
                 @media all and (max-width: 992px) {
@@ -135,6 +152,7 @@
                     line-height: 16px;
                     color: nth($color,2);
                     padding: 26px 0px 10px 10px;
+                    font-display: swap;
                 }
             }
 
@@ -201,6 +219,7 @@
         line-height: 22px;
         color: #F2F2F2;
         padding-left: 10px;
+        font-display: swap;
     }
 
     .container-form {
@@ -215,6 +234,7 @@
                 line-height: 150%;
                 letter-spacing: 0.01em;
                 color: #6F7482;
+                font-display: swap;
             }
         }
 
@@ -235,6 +255,7 @@
                 letter-spacing: 0.02em;
                 color: nth($color,2);
                 text-transform: capitalize;
+                font-display: swap;
     
                 &:hover {
                     box-shadow: 0 0 20px nth($color,1);
@@ -266,8 +287,59 @@
     }
 }
 
+#btn-contact { 
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: nth($color,2);
+    font-display: swap;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
 
+    background-color: nth($color,1); 
+    border-radius: 8px;
 
+    width: 120px;
+    height: 36px;
+    left: 84px;
+    top: 509px;
+
+    &:hover {
+        box-shadow: 0 0 45px nth($color, 1);
+        color: nth($color,2);
+    }
+
+   &:focus {
+       border-bottom: none;
+       box-shadow: none;
+   }
+
+    @media all and (max-width: $sm) {
+        font-size: 12px;
+        margin: 10px 0px;
+        background-color: nth($color,1); 
+        border-radius: 8px;
+        width: 120px;
+        height: 36px;
+    }
+}
+
+#label-form-name, #label-form-apellido, #label-form-mail, #label-form-actividad, #label-form-consulta {
+    @extend %label-form;
+}
+
+#exampleFormControlInput1, #exampleFormControlInput2, #exampleFormControlInput3, #exampleFormControlInput4, #exampleFormControlTextarea1 {
+    &:focus {
+        @extend %imput-focus;
+    }
+}
 
 
 

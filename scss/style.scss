@@ -4,6 +4,9 @@
 @import './base/listas';
 @import './base/variables';
 @import './base/text';
+@import './base/extends';
+@import './base/mixin';
+@import './base/maps';
 
 @import './base/header';
 @import './base/footer';
@@ -58,6 +61,7 @@
                 letter-spacing: 0.02em;
                 color: nth($color,2);
                 text-transform: uppercase;
+                font-display: swap;
             
                 width: auto;
                 height: auto;
@@ -70,6 +74,7 @@
                     line-height: 30px;
                     letter-spacing: 0.02em;
                     margin: 0px;
+                    font-display: swap;
                 }
 
                 @media all and (max-width: $sm) {
@@ -81,6 +86,7 @@
                     letter-spacing: 0.02em;
                     color: nth($color,2);
                     text-transform: uppercase;
+                    font-display: swap;
                 }
 
             }
@@ -89,10 +95,11 @@
                 font-family: montserrat;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 14px;
+                font-size: 18px;
                 line-height: 17px;
                 letter-spacing: 0.02em;
                 color: nth($color,2);
+                font-display: swap;
             
                 display: flex;
                 align-items: center;
@@ -114,6 +121,7 @@
                     line-height: 10px;
                     letter-spacing: 0.02em;
                     color: nth($color,2);
+                    font-display: swap;
                 }
             }
             
@@ -125,6 +133,7 @@
                 font-size: 14px;
                 line-height: 17px;
                 text-align: center;
+                font-display: swap;
                 
                 display: flex;
                 align-items: center;
@@ -146,14 +155,8 @@
                 }
 
                 @media all and (max-width: $sm) {
-
-                    text-transform: uppercase;
-                    font-family: montserrat;
-                    font-style: normal;
-                    font-weight: 600;
                     font-size: 12px;
-                    line-height: 17px;
-                    text-align: center;
+
         
                     display: flex;
                     align-items: center;
@@ -246,6 +249,7 @@
     line-height: 21px;
     letter-spacing: 0.02em;
     color: #333333;
+    font-display: swap;
            
     margin-right: 10px;
     margin-left: 10px;

@@ -64,20 +64,30 @@
 
             .card-body {
                 .profe-name {
-                    font-family: Montserrat;
+                    font-family: map-get($font-profe-name, family-profe);
+                    font-style: map-get($font-profe-name, style-profe);
+                    font-weight: map-get($font-profe-name, weight-profe);
+                    font-size: map-get($font-profe-name, size-profe);
+                    font-display: swap;
+                    /*font-family: Montserrat;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 16px;
+                    font-size: 16px;*/
                     line-height: 19px;
                     text-transform: uppercase; 
                     color: nth($color, 2); 
                 }
                 
                 .profe-class {
-                    font-family: Poppins;
+                    font-family: map-get($font-class-name, family-class);
+                    font-style: map-get($font-class-name, style-class);
+                    font-weight: map-get($font-class-name, weight-class);
+                    font-size: map-get($font-class-name, size-class);
+                    font-display: swap;
+                    /*font-family: Poppins;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 14px;
+                    font-size: 14px;*/
                     color: nth($color, 2);
                 }
             }

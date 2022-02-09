@@ -1,3 +1,5 @@
+@import 'extends';
+
 /* ------ FONTS ------ */ 
 
 /* Montserrat Bold: for H1 and titles */
@@ -59,14 +61,7 @@
 
 /* TITLES & SUBTITLES STYLES START */ 
 .titles {
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    color: nth($color,2);
-    text-transform: uppercase;
-    text-align: center;
+    @extend %titles;
 
     @media all and (max-width: $sm) {
         font-family: montserrat;
@@ -77,19 +72,12 @@
         color: nth($color,2);
         text-transform: uppercase;
         text-align: center;
+        font-display: swap;
     }
 }
 
 .subtitles {
-    margin: 0px 40px;
-    padding-top: 10px;
-    text-align: center;
-    font-family: montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: nth($color,2);
+    @extend %subtitles;
 
     @media all and (max-width: $sm) {
         padding-top: 10px;
@@ -99,7 +87,8 @@
         font-weight: normal;
         font-size: 12px;
         line-height: 17px;
-        color: nth($color,2); 
+        color: nth($color,2);
+        font-display: swap; 
     }
 }
 

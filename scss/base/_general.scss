@@ -24,9 +24,9 @@ ul, li, a {
 .home-body {
     background-image: url("../src/assets/img/home-bg.png");
     width: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 
-    margin: 40px 0px 0px 0px;
+    margin: 0px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
@@ -42,6 +42,8 @@ ul, li, a {
     left: 0px;
     overflow-x: hidden;
 }
+
+
 
 /* FAB BUTTON */
 .fab {

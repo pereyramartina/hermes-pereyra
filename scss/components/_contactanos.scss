@@ -1,6 +1,6 @@
 /*GENERAL & GRID CONFIG */ 
 .body-contactanos {
-    margin: 40px 0px 0px 0px;
+    margin: 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -44,14 +44,17 @@
     #contactanos-subtitle {
 
         @media all and (max-width: $mobile) {
+            margin: 0px 20px;
             text-align: center;
         }
 
         @media all and (max-width: $sm) {
+            margin: 0px 20px;
             text-align: center;
         }
     
         @media all and (max-width: 992px) {
+            margin: 0px 20px;
             text-align: center;
         }
     }
@@ -220,6 +223,14 @@
         color: #F2F2F2;
         padding-left: 10px;
         font-display: swap;
+
+        @media all and (max-width: $sm) {
+            text-align: center;
+        }
+
+        @media all and (max-width: $md) {
+            text-align: center;
+        }
     }
 
     .container-form {
@@ -263,6 +274,14 @@
                 }
             }
 
+
+            @media all and (max-width: $sm) {
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+
+            }
         }
     }
 

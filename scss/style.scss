@@ -31,9 +31,10 @@
     }
 
     .main-section {
+        
         width: 100%;
         height: auto;
-        margin-bottom: 6%;
+        padding: 0px 0px 60px 0px;
     
         grid-row-start: 2;
         grid-row-end: 3;
@@ -70,8 +71,8 @@
                 flex-wrap: wrap;
 
                 @media all and (max-width: $mobile) {
-                    font-size: 24px;
-                    line-height: 30px;
+                    font-size: 30px;
+                    line-height: 40px;
                     letter-spacing: 0.02em;
                     margin: 0px;
                     font-display: swap;
@@ -81,14 +82,30 @@
                     font-family: montserrat;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 32px;
+                    font-size: 28px;
                     line-height: 30px;
                     letter-spacing: 0.02em;
                     color: nth($color,2);
                     text-transform: uppercase;
                     font-display: swap;
                 }
+                
 
+                @media  (max-width: $md) {
+                    font-family: montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 50px;
+                    letter-spacing: 0.02em;
+                    color: nth($color,2);
+                    text-transform: uppercase;
+                    font-display: swap;
+                }
+                
+                @media all and (max-width: $mobile) {
+                    margin: 0px;  
+                }
             }
     
             .main-section-subtitle {
@@ -104,21 +121,31 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin: 10px 0px;
+                margin: 0px 0px;
 
                 @media all and (max-width: $mobile) {
-                    font-size: 11px;
+                    font-size: 14px;
                     font-weight: 300;
                     margin: 0px;
                 }
 
                 @media all and (max-width: $sm) {
-
                     font-family: montserrat;
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 12px;
-                    line-height: 10px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    color: nth($color,2);
+                    font-display: swap;
+                }
+
+                @media all and (max-width: $md) {
+                    font-family: montserrat;
+                    font-style: normal;
+                    font-weight: 500px;
+                    font-size: 18px;
+                    line-height: 30px;
                     letter-spacing: 0.02em;
                     color: nth($color,2);
                     font-display: swap;
@@ -155,9 +182,9 @@
                 }
 
                 @media all and (max-width: $sm) {
-                    font-size: 12px;
+                    font-size: 14px;
+                    font-weight: 500;
 
-        
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -167,7 +194,7 @@
                     border-radius: 8px;
     
                     width: 140px;
-                    height: 36px;
+                    height: 46px;
                     left: 84px;
                     top: 509px
                 }
@@ -227,17 +254,18 @@
     }
 
     @media all and (max-width: $sm) {
-        background-image: url("../src/assets/img/home-bg-sm.png");
+        background-image: url("../src/assets/img/bg-for-home-mobile.png");
         width: fit-content;
         background-repeat: no-repeat;
     
-        margin: 40px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
+
 }
 
 /* STYLES FOR BENEFITS SECTION  */

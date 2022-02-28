@@ -11,17 +11,10 @@ footer {
         width: 100%;
         padding: 40px 0px;
         @include container (inline-flex, row, wrap, none, space-evenly);
-        /*display: inline-flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;*/
+        
 
         .footer-section-logo {
             @include container (flex, column, none, center, flex-start);
-            /*display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;*/
         }
 
         .footer-nav {
@@ -38,7 +31,7 @@ footer {
                     font-family: poppins;
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 18px;
                     color: nth($color,2);
                     text-transform: capitalize;
@@ -47,6 +40,14 @@ footer {
                     &:hover {
                         color: nth($color,1);
                     }
+                }
+
+                @media all and (max-width: $sm) {
+                    margin-top: 30px;
+                }
+        
+                @media all and (max-width: $md) {
+                    margin-top: 30px;
                 }
             }
         }
@@ -64,7 +65,7 @@ footer {
                     font-family: poppins;
                     font-style: normal;
                     font-weight: 300;
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 18px;
                     color: nth($color,2);
                     font-display: swap;
@@ -86,14 +87,17 @@ footer {
             }
 
             @media all and (max-width: $mobile) {
+                margin-top: 30px;
                 align-items: center;
             }
 
             @media all and (max-width: $sm) {
+                margin-top: 30px;
                 align-items: center;
             }
 
             @media all and (max-width: $md) {
+                margin-top: 30px;
                 align-items: center;
             }
         }
@@ -103,7 +107,7 @@ footer {
                 font-family: poppins;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 18px;
                 color: nth($color,2);
                 font-display: swap;
@@ -132,14 +136,24 @@ footer {
                     padding: 0px 10px;
                  }
             }
+
+            @media all and (max-width: $sm) {
+                margin-top: 30px;
+            }
+    
+            @media all and (max-width: $md) {
+                margin-top: 30px;
+            }
         }
 
         @media all and (max-width: $sm) {
+            margin-top: 10px;
             justify-content: space-evenly;
             flex-direction: column;
         }
 
         @media all and (max-width: $md) {
+            margin-top: 10px;
             justify-content: space-evenly;
             flex-direction: column;
         }
@@ -151,7 +165,7 @@ footer {
             font-family: poppins;
             font-style: italic;
             font-weight: 300;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 8px;
             color: nth($color,2);
             align-items: center;
@@ -164,11 +178,13 @@ footer {
     }
     
     @media all and (max-width: $sm) {
+        margin-top: 10px;
         width: 100%;
         background-color: nth($color,5);
     }
 
     @media all and (max-width: $md) {
+        margin-top: 10px;
         width: 100%;
         background-color: nth($color,5);
     }
